@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Home
+---
+
+<p>
+  Hi there, thanks for stopping by!
+  I'm Ossama Edbali, software developer at <a href="https://www.ucas.com/">UCAS</a>,
+  currently based in Cheltenham, UK.
+</p>
+
+<p>
+  I design and build bespoke web applications.
+  <a href="mailto:ossedb@gmail.com">Get in touch</a> to start something great!
+  For more insights on what I do check out the <a href="/work">work</a> page.
+</p>
+
+<p>
+  I develop web applications, services, and APIs in <strong>Laravel PHP</strong>, <strong>Node JS</strong>, <strong>.NET</strong> for backend and
+  <strong>React JS</strong> and <strong>Angular</strong> for frontend.
+</p>
+
+<section>
+  <h1>Recent posts</h1>
+  {% set postslist = collections.post | head(-3) %}
+  {% include "./_includes/partials/postslist.njk" %}
+  </div>
+</section>

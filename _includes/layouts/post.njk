@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+
+<header class="post--header">
+  <h1 class="font-medium text-2xl">{{ title }}</h1>
+  <p class="text-grey-dark text-sm">by {{ author }} - {{ date | formattedDate }}</p>
+</header>
+
+<section class="post--content">
+  {{ content | safe }}
+</section>

@@ -1,0 +1,221 @@
+@tailwind base;
+
+@tailwind components;
+
+/*********************************************
+ * Breakpoints:
+ *    - min-width: 40.063em -> tablet
+ *    - min-width: 64.063em -> desktop
+ *********************************************/
+
+/*********************************************
+ *
+ *             General definitions
+ *
+ *********************************************/
+
+body {
+  font-family: "Work Sans", sans-serif;
+  @apply border-t-8
+    border-teal-600
+    bg-gray-100;
+}
+
+nav {
+  @apply mt-12
+    mb-8;
+}
+
+nav > a {
+  @apply no-underline
+    uppercase
+    tracking-wide
+    text-teal-800
+    mr-3;
+}
+
+p {
+  @apply leading-normal mb-2;
+}
+
+p,
+ul,
+label {
+  @apply text-gray-700;
+}
+
+label {
+  @apply block mb-2;
+}
+
+a {
+  @apply text-teal-500;
+}
+
+main > h1 {
+  @apply text-2xl font-medium mb-4;
+}
+
+@media only screen and (min-width: 64.063em) {
+  main {
+    padding: 0;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+}
+
+section {
+  @apply my-8;
+}
+
+section > h1 {
+  @apply text-xl font-medium mb-4;
+}
+
+/*********************************************
+ *
+ *           Component definitions
+ *
+ *********************************************/
+
+/*************************
+ *        Button
+ *************************/
+
+.btn {
+  @apply py-2 px-4 rounded;
+}
+
+.btn-teal {
+  @apply bg-teal-500 text-white;
+}
+
+.btn-teal:hover {
+  @apply bg-teal-600;
+}
+
+/*************************
+ *         Card
+ *************************/
+
+.cards {
+  @apply flex flex-wrap justify-between;
+}
+
+.card {
+  @apply block
+    w-full
+    mb-6
+    flex-none
+    rounded
+    overflow-hidden
+    self-start;
+}
+
+.card--shadow {
+  @apply shadow-lg;
+}
+
+.card--no-shadow {
+  @apply border bg-white;
+}
+
+.card--action {
+  @apply block
+    text-sm
+    flex
+    justify-between
+    items-center
+    no-underline
+    bg-gray-100
+    py-3
+    px-4;
+}
+
+.card--action > p {
+  @apply m-0;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .card {
+    width: 48%;
+  }
+}
+
+/*************************
+ *         Form
+ *************************/
+
+.form-group {
+  @apply my-6;
+}
+
+.form-control {
+  @apply w-full rounded shadow py-3 px-4;
+}
+
+.form-control--error {
+  @apply border border-red-600;
+}
+
+/*************************
+ *     Button loader
+ *************************/
+
+.btn-loader {
+  @apply fill-current
+  text-white
+  w-4
+  h-4;
+
+  -webkit-animation: spin 200ms linear infinite;
+  -moz-animation: spin 200ms linear infinite;
+  animation: spin 200ms linear infinite;
+}
+
+/*************************
+ *        Alert
+ *************************/
+
+.alert {
+  @apply w-full
+  p-3
+  my-3
+  rounded;
+}
+
+.alert-error {
+  @apply bg-red-500;
+}
+
+.alert-close {
+  @apply fill-current
+    text-white
+    cursor-pointer
+    w-5
+    h-5;
+}
+
+/*********************************************
+ *
+ *                Animations
+ *
+ *********************************************/
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@tailwind utilities;

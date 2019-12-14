@@ -1,0 +1,15 @@
+<div class="cards">
+{%- for post in postslist -%}
+  <a
+    href="{{ post.url | url }}"
+    class="card card--shadow no-underline text-gray-800 bg-white">
+    <img class="w-full" src="/images/blog/{{ post.fileSlug }}.jpg" alt="{{ post.data.title }}">
+    <div class="px-6 py-4">
+      <p class="text-gray-800 text-lg">{{ post.data.title }}</p>
+      <p class="text-gray-600 text-xs">
+        {{ post.date | relativeDate }}
+      </p>
+    </div>
+  </a>
+{%- endfor -%}
+</div>

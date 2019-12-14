@@ -1,0 +1,23 @@
+{
+  "name": "website-rework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwind build ./tailwind.build.css -o ./_build/css/styles.css && npx uglifycss ./_build/css/styles.css --output ./_build/css/styles.min.css && npx @11ty/eleventy",
+    "watch": "npx eleventy --watch",
+    "serve": "npx eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "markdown-it": "^10.0.0",
+    "uglifycss": "0.0.29"
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "tailwindcss": "^1.1.4"
+  }
+}
