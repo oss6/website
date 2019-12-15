@@ -6,10 +6,10 @@ module.exports = function(eleventyConfig) {
     n < 0 ? array.slice(n) : array.slice(0, n)
   );
 
-  eleventyConfig.addFilter("relativeDate", page => moment(page.date).fromNow());
+  eleventyConfig.addFilter("relativeDate", date => moment(date).fromNow());
 
-  eleventyConfig.addFilter("formattedDate", page =>
-    moment(page.date).format("Do MMMM YYYY")
+  eleventyConfig.addFilter("formattedDate", date =>
+    moment(date).format("Do MMMM YYYY")
   );
 
   eleventyConfig.addPassthroughCopy("images");
