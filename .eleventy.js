@@ -1,7 +1,7 @@
 const markdownIt = require("markdown-it");
 const moment = require("moment");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("head", (array, n) =>
     n < 0 ? array.slice(n) : array.slice(0, n)
   );
@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy({ "_build/css": "css" });
+  eleventyConfig.addPassthroughCopy("index.js");
 
   /* Markdown Overrides */
   const markdownLibrary = markdownIt({
