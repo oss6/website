@@ -2,6 +2,7 @@
   var form = document.querySelector('#contact-form');
   var formSuccess = document.querySelector('#contact-form-success');
   var formError = document.querySelector('#contact-form-error');
+  var spinner = document.querySelector('.spinner');
 
   if (!form) {
     return;
@@ -13,6 +14,8 @@
     var data = {};
     var formElements = Array.from(form);
     formElements.map(input => (data[input.name] = input.value));
+
+    spinner.classList.remove('hidden');
 
     // Construct an HTTP request
     var xhr = new XMLHttpRequest();
@@ -27,8 +30,10 @@
     xhr.onloadend = response => {
       if (response.target.status === 200) {
         form.reset();
+        spinner.classList.add('hidden');
         formSuccess.classList.remove('hidden');
       } else {
+        spinner.classList.add('hidden');
         formError.classList.remove('hidden');
       }
     };
