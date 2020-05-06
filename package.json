@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwind build ./tailwind.build.css -o ./_build/css/styles.css && npx uglifycss ./_build/css/styles.css --output ./_build/css/styles.min.css && npx @11ty/eleventy",
+    "build:tailwind": "npx tailwind build ./tailwind.build.css -c ./tailwind.config.js -o ./_build/css/styles.css && npx uglifycss ./_build/css/styles.css --output ./_build/css/styles.min.css",
+    "build": "npm run build:tailwind && npx @11ty/eleventy",
     "watch": "npx eleventy --watch",
     "serve": "npx eleventy --serve"
   },
@@ -17,7 +18,7 @@
     "uglifycss": "0.0.29"
   },
   "dependencies": {
-    "moment": "^2.24.0",
-    "tailwindcss": "^1.1.4"
+    "moment": "^2.25.3",
+    "tailwindcss": "^1.4.4"
   }
 }
