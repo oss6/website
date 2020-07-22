@@ -6,7 +6,7 @@
 
 ```
 $ npm run build # once or whenever styles are changed
-$ npm run server # or watch
+$ npm run serve # or watch
 ```
 
 ## Upload website

@@ -6,8 +6,6 @@ module.exports = function (eleventyConfig) {
     array.sort((a, b) => b.date - a.date).slice(0, n)
   );
 
-  eleventyConfig.addFilter("relativeDate", date => moment(date).fromNow());
-
   eleventyConfig.addFilter("formattedDate", date =>
     moment(date).format("Do MMMM YYYY")
   );
@@ -27,21 +25,6 @@ module.exports = function (eleventyConfig) {
     linkify: true
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
-
-  // // Browsersync Overrides
-  // eleventyConfig.setBrowserSyncConfig({
-  //   callbacks: {
-  //     ready: function(err, browserSync) {
-  //       const content_404 = fs.readFileSync('_site/404.html');
-
-  //       browserSync.addMiddleware("*", (req, res) => {
-  //         // Provides the 404 content without redirect.
-  //         res.write(content_404);
-  //         res.end();
-  //       });
-  //     }
-  //   }
-  // });
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],
