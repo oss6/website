@@ -1,5 +1,6 @@
 {
   "name": "website-rework",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,9 +10,6 @@
     "watch": "npx eleventy --watch",
     "serve": "npx eleventy --serve"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
     "markdown-it": "^10.0.0",
