@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf _site && rimraf _tmp",
-    "build": "npm run clean && NODE_ENV=production npx postcss tailwind.build.css --o _site/styles.css && ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
+    "build": "npm run clean && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss tailwind.build.css --o _site/styles.css && cleancss _site/styles.css -o _site/styles.css",
     "start": "concurrently \"eleventy --serve\" \"postcss tailwind.build.css --o _tmp/styles.css --watch\""
   },
   "devDependencies": {
