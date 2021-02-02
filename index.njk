@@ -5,14 +5,14 @@ title: Home
 
 <p>
   Hi there, thanks for stopping by!
-  I'm Ossama Edbali, software developer at <a href="https://www.ebi.ac.uk/" target="_blank">The European Bioinformatics Institute (EMBL-EBI)</a>,
+  I'm Ossama Edbali, software developer at <a class="link" href="https://www.ebi.ac.uk/" target="_blank">The European Bioinformatics Institute (EMBL-EBI)</a>,
   currently based in Birmingham, UK.
 </p>
 
 <p>
   I design and build bespoke web applications and websites.
-  <a href="mailto: ossedb@gmail.com">Get in touch</a> to start something great!
-  For more insights on what I do check out the <a href="/work">work</a> page.
+  <a class="link" href="mailto: ossedb@gmail.com">Get in touch</a> to start something great!
+  For more insights on what I do check out the <a class="link" href="/work">work</a> page.
 </p>
 
 <p>
@@ -21,7 +21,7 @@ title: Home
 </p>
 
 <section>
-  <h1>Recent posts</h1>
+  <h1 class="text-2xl font-medium text-amber-800 mb-4">Recent posts</h1>
   {% set postslist = collections.post | head(4) %}
   {% include "./_includes/partials/postslist.njk" %}
   </div>

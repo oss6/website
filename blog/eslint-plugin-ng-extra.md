@@ -6,7 +6,7 @@ author: Ossama Edbali
 tags: post
 ---
 
-In the recent weeks I've been working on an <a href="https://github.com/oss6/eslint-plugin-ng-extra">ESLint plugin</a> for Angular.
+In the recent weeks I've been working on an <a class="link" href="https://github.com/oss6/eslint-plugin-ng-extra">ESLint plugin</a> for Angular.
 It includes rules that I found to be useful when developing medium-large applications using reactive programming concepts as well as server
 side rendering.
 
@@ -19,4 +19,4 @@ The rules to date are:
   <li><pre>no-subject-exposition</pre> checks that no subjects are publicly exposed</li>
 </ul>
 
-Feel free to <a href="https://github.com/oss6/eslint-plugin-ng-extra/blob/master/CONTRIBUTING.md">contribute</a> and/or raise issues/features!
+Feel free to <a class="link" href="https://github.com/oss6/eslint-plugin-ng-extra/blob/master/CONTRIBUTING.md">contribute</a> and/or raise issues/features!

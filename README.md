@@ -5,8 +5,7 @@
 ## Local development
 
 ```
-$ npm run build # once or whenever styles are changed
-$ npm run serve # or watch
+$ npm run start
 ```
 
 ## Upload website

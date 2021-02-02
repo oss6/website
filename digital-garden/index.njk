@@ -1,0 +1,51 @@
+---
+layout: layouts/base.njk
+title: Digital garden
+---
+
+<main>
+  <div class="content-header">
+    <h1 class="content-header__title">Digital garden</h1>
+    <h2 class="content-header__subtitle">
+      The digital garden is a way to cultivate the mind with quality content
+    </h2>
+  </div>
+
+  <p>From <a class="link" href="https://www.mentalnodes.com/a-gardening-guide-for-your-mind" target="_blank">A gardening guide for your mind</a>:</p>
+
+  <ul class="list-disc pl-8">
+    <li><strong>Seeds.</strong> Seed your garden with quality content and cultivate your curiosity. Plant seeds in your mind garden by taking smart personal notes (taking raw notes is useless). These don't need to be written in a publishable form.</li>
+    <li><strong>Trees.</strong> Grow your knowledge by forming new branches and connecting the dots. Write short structured notes articulating specific ideas and publish them in your digital garden. One note in your digital garden = one idea. (what you're currently reading is such a note) Do not keep orphan notes. Thread your thoughts.</li>
+    <li><strong>Fruits.</strong> Produce new work. These are more substantial—essays, videos, maybe a book at some point. The kind of work researchers and creatives may hope will help them live beyond their expiration date.</li>
+  </ul>
+
+  <div class="grid grid-cols-3 gap-4 mt-8">
+  {% for digitalGardenItem in collections.digitalGarden %}
+    <div>
+      <h3 class="text-amber-800 font-bold">{{ digitalGardenItem[0] }}</h3>
+      <ul class="">
+        {% for note in digitalGardenItem[1] %}
+        <li class="flex items-center">
+          {% if note.data.note_type == "seed" %}
+          <svg class="fill-current w-8 h-8 text-amber-800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M44.711,40.599c-0.865-10.093-0.258-15.998,1.911-18.584c0.739-0.882,1.867-1.425,3.093-1.489  c1.387-0.07,2.757,0.465,3.848,1.518c0.884,0.853,1.484,2.593,0.711,4.397c-0.442,1.034-1.294,1.828-2.277,2.125  c-0.884,0.269-1.819,0.124-2.628-0.407c-0.578-0.378-0.739-1.153-0.36-1.73c0.378-0.578,1.155-0.738,1.73-0.36  c0.247,0.161,0.417,0.14,0.536,0.105c0.276-0.083,0.551-0.364,0.702-0.716c0.315-0.735,0.059-1.414-0.148-1.614  c-0.586-0.565-1.294-0.869-1.981-0.82c-0.528,0.028-1.018,0.252-1.31,0.599c-1.669,1.99-2.118,7.63-1.334,16.764  c0.312,3.637,1.262,7.884,2.34,11.806c0.345,2.495,0.638,5.233,0.378,6.326c-0.86-1.113-2.134-4.82-2.929-7.132  c-0.311-0.903-0.602-1.74-0.883-2.524C45.453,46.04,44.934,43.19,44.711,40.599z M54.277,40.343  c-0.501-0.174-1.711-0.516-2.772-0.516c-0.768,0-1.458,0.179-1.744,0.731c-1.318,2.544,3.511,18.943,0.481,19.399  C50.161,59.986,50.08,60,50,60c-2.784,0-5.697-16.85-8.677-16.85c-2.354,0-4.9,7.405-4.9,12.664  c0,19.675,9.829,23.843,13.308,23.843s13.308-4.167,13.308-23.843C63.039,48.512,59.208,42.057,54.277,40.343z"/></svg>
+          {% elif note.data.note_type == "tree" %}
+          <svg class="fill-current w-8 h-8 text-green-800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 32 40" enable-background="new 0 0 32 32" xml:space="preserve"><path d="M24.485,2c0,8-18,4-18,20c0,6,2,8,2,8h2c0,0-3-2-3-8c0-4,9-8,9-8s-7.981,4.328-7.981,8.436C21.239,24.431,28.288,9.606,24.485,2z"/><text x="0" y="47" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Dmitry Baranovskiy</text><text x="0" y="52" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+          {% else %}
+          <svg class="fill-current w-5 h-5 text-red-800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;" viewBox="0 0 7612 10900" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd">
+            <g>
+              <path class="fil0" d="M1929 500c768,1894 -206,3384 337,5500 201,786 536,1406 1150,1958 2252,2023 3837,-516 3389,-2922 -53,-283 -130,-566 -233,-836 -469,-1349 -1411,-2250 -2650,-2918 -625,-338 -1306,-600 -1993,-782z"/>
+              <path class="fil0" d="M4131 8603c-1089,-526 -1748,-1530 -2019,-2678 -224,-949 -155,-1765 -76,-2611 49,-524 97,-1037 53,-1564 -695,-172 -1423,-254 -2089,-262 642,876 778,1757 922,2683 142,914 290,1872 948,2904 333,542 835,986 1396,1282 388,204 788,329 1145,363 -95,-33 -190,-73 -280,-117z"/>
+              <path class="fil0" d="M6935 5016c137,548 105,1414 -35,1960 -63,250 -154,494 -279,719 362,-409 640,-898 783,-1436 332,-1179 198,-2139 70,-3055 -130,-927 -254,-1810 107,-2834 -567,178 -1158,424 -1714,733 194,1312 943,2339 1068,3913z"/>
+              <path class="fil0" d="M5722 0c-563,323 -1144,736 -1657,1210 1096,611 2038,1461 2522,2648 -376,-1323 -1051,-2356 -865,-3858z"/>
+            </g>
+            <text x="0" y="8735" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by tajhin palappa</text><text x="0" y="8740" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
+          </svg>
+          {% endif %}
+          <a href="{{ note.url | url }}">{{ note.data.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+  </div>
+</main>

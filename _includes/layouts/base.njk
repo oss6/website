@@ -12,18 +12,22 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png?v=1' | url }}">
 
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/css/styles.min.css' | url }}">
-  {# <%- blocks.css %> #}
+  <link rel="stylesheet" href="{{ '/styles.css' | url }}">
 </head>
 
 <body>
-  <main class="p-8">
-    {% include "../partials/nav.njk" %}
+  <svg style="position: absolute; left: 0; top: 0; z-index: -1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FED7AA56" fill-opacity="1" d="M0,288L80,272C160,256,320,224,480,218.7C640,213,800,235,960,208C1120,181,1280,107,1360,69.3L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+  {# <main class="p-8"> #}
+  <header class="global-header">
+  {% include "../partials/nav.njk" %}
+  </header>
 
-    {{ content | safe }}
+  <section class="global-content">
+  {{ content | safe }}
+  </section>
 
-    {% include "../partials/footer.njk" %}
-  </main>
+  {% include "../partials/footer.njk" %}
+  {# </main> #}
 
   <script src="/index.js"></script>
 

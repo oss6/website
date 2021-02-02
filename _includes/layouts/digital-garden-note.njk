@@ -1,0 +1,67 @@
+---
+layout: layouts/base.njk
+---
+
+<main>
+  <div class="content-header">
+    <a class="link text-sm mb-5 flex items-center" href="/digital-garden">
+      <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+      </svg>
+      <span>Back</span>
+    </a>
+    <h1 class="content-header__title">{{ title }}</h1>
+  </div>
+
+  <div class="grid grid-cols-4 gap-4">
+    <article class="col-span-3">
+      {% if content %}
+      {{ content | safe }}
+      {% else %}
+      <div class="bg-white border-t-4 border-amber-700 shadow-lg px-3 py-4 flex items-center">
+        <svg class="text-amber-700 w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <p class="ml-4 text-amber-700">This note is a work in progress</p>
+      </div>
+      {% endif %}
+    </article>
+    <aside>
+      <h3 class="uppercase tracking-wide mb-5 border-b-1 border-dashed text-amber-700 border-amber-700 inline-block">Related notes</h3>
+      {% for n in collections.digitalGarden %}
+        {% if n[0] in categories %}
+        <div class="mb-4 text-sm">
+          <h4>{{ n[0]}}</h4>
+          <ul>
+            {% for note in n[1] %}
+            <li class="flex items-center">
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+              </svg>
+              <a class="link" href="{{ note.url | url }}">{{ note.data.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      {% endfor %}
+
+      {% if todos %}
+      <h3 class="uppercase tracking-wider mb-5 border-b-1 border-dashed text-amber-700 border-amber-700 inline-block mt-8">
+        Todos
+      </h3>
+
+      <ul class="text-sm">
+        {% for todoItem in todos %}
+        <li class="flex items-center">
+          <svg class="w-4 h-4 text-amber-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
+          </svg>
+          <span class="ml-2">{{ todoItem }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </aside>
+  </div>
+</main>

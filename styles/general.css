@@ -1,0 +1,116 @@
+/*********************************************
+ * Breakpoints:
+ *    - min-width: 40.063em -> tablet
+ *    - min-width: 64.063em -> desktop
+ *********************************************/
+
+::selection {
+  @apply bg-amber-200;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  @apply
+    bg-gray-100
+    m-0;
+}
+
+nav > a {
+  border: none;
+  @apply
+    no-underline
+    uppercase
+    tracking-wide
+    text-amber-800
+    mr-3;
+}
+
+p {
+  @apply leading-normal mb-2;
+}
+
+p,
+ul,
+label {
+  @apply text-gray-700;
+}
+
+label {
+  @apply block mb-2;
+}
+
+a {
+  @apply text-amber-600 relative;
+}
+
+a.link {
+  @apply inline-flex;
+}
+
+a.link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  height: 10px;
+  z-index: -1;
+  opacity: 0.3;
+  will-change: width;
+  transition: width .1s ease-out;
+  @apply bg-amber-300;
+}
+
+a.link:hover::after {
+  width: 0;
+  transition-duration: .15s;
+}
+
+code {
+  @apply px-2 py-1 bg-amber-300 rounded text-sm;
+}
+
+pre {
+  @apply bg-white rounded shadow-lg px-5 py-4;
+}
+
+pre > code {
+  background-color: transparent;
+}
+
+.global-header {
+  @apply mt-12 mb-8;
+}
+
+@media only screen and (min-width: 64.063em) {
+  .global-header, .global-content, .global-footer {
+    @apply text-xl;
+    padding: 0;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+section {
+  @apply my-8;
+}
+
+article > h2 {
+  @apply font-medium text-amber-800 text-xl mt-10 mb-5;
+}
+
+article > h3 {
+  @apply font-medium text-amber-700 text-lg mt-8 mb-3;
+}
+
+.content-header {
+  @apply mb-8;
+}
+
+.content-header__title {
+  @apply text-2xl font-medium text-amber-900;
+}
+
+.content-header__subtitle {
+  @apply text-lg font-normal text-amber-700 mt-3;
+}

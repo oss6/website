@@ -1,0 +1,45 @@
+.cards {
+  @apply flex flex-wrap justify-between;
+}
+
+.card {
+  @apply
+    block
+    w-full
+    mb-6
+    flex-none
+    rounded
+    overflow-hidden
+    self-start;
+}
+
+.card--shadow {
+  @apply shadow-lg;
+}
+
+.card--no-shadow {
+  @apply border bg-white;
+}
+
+.card--action {
+  @apply
+    block
+    text-sm
+    flex
+    justify-between
+    items-center
+    no-underline
+    bg-gray-100
+    py-3
+    px-4;
+}
+
+.card--action > p {
+  @apply m-0;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .card {
+    width: 48%;
+  }
+}

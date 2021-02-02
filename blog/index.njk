@@ -3,7 +3,11 @@ layout: layouts/base.njk
 title: Blog
 ---
 
-<h1>Blog</h1>
+<main>
+  <div class="content-header">
+    <h1 class="content-header__title">Blog</h1>
+  </div>
 
-{% set postslist = collections.post %}
-{% include "../_includes/partials/postslist.njk" %}
+  {% set postslist = collections.post %}
+  {% include "../_includes/partials/postslist.njk" %}
+</main>
