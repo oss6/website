@@ -1,8 +1,11 @@
 const markdownIt = require("markdown-it");
 const moment = require("moment");
 const htmlmin = require("html-minifier");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(syntaxHighlight);
+
   eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addFilter("head", (array, n) =>
@@ -12,10 +15,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("formattedDate", date =>
     moment(date).format("Do MMMM YYYY")
   );
-
-  eleventyConfig.addFilter("digitalGardenNotes", (category) => {
-
-  });
 
   eleventyConfig.addWatchTarget("./_tmp/styles.css");
 

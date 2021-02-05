@@ -9,7 +9,7 @@ categories:
 todos:
 - Change detection loops
 - Performance
-- Check internal code
+- Check internals
 ---
 
 ## Introduction
@@ -72,7 +72,7 @@ TODO.
 
 ## Run code without change detection
 
-```
+```ts
 export class MyComponent {
   constructor(private ngZone: NgZone) {}
 

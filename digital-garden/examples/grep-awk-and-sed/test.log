@@ -1,0 +1,8 @@
+03/22 08:51:06 TRACE read_physical_netif: Home list entries returned = 7
+03/22 08:51:06 INFO read_physical_netif: index #0, interface VLINK1 has address 129.1.1.1, ifidx 0
+03/22 08:51:07 INFO read_physical_netif: index #1, interface TR1 has address 9.37.65.139, ifidx 1
+03/22 08:51:08 WARNING mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+03/22 08:51:08 ERROR mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+03/22 08:51:09 INFO mailslot_create: creating mailslot for timer
+03/22 08:51:10 INFO mailbox_register: mailbox allocated for timer
+03/22 08:51:13 ERROR mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
