@@ -1,10 +1,9 @@
 ---
 layout: layouts/post.njk
 title: A web development primer
-date: 2021-04-23
+date: 2021-06-03
 author: Ossama Edbali
 tags: post
-eleventyExcludeFromCollections: true
 ---
 
 If you're interested in web development, then you're in the right place.
