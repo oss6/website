@@ -81,6 +81,10 @@ pre > code {
   @apply mt-12 mb-8;
 }
 
+.global-header, .global-content, .global-footer {
+  @apply px-4;
+}
+
 @media only screen and (min-width: 64.063em) {
   .global-header, .global-content, .global-footer {
     @apply text-xl;
