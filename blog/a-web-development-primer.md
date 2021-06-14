@@ -14,7 +14,7 @@ In this article we're going to explore the different career paths and how to sta
     <h3 class="text-2xl">Interested in web development?</h3>
     <h4 class="text-gray-200">Join my free course!</h4>
   </div>
-  <a href="https://bit.ly/32PKgXd" target="_blank" class="bg-white rounded px-3 py-2">Register</a>
+  <a href="https://bit.ly/32PKgXd" class="bg-white rounded px-3 py-2">Register</a>
 </div>
 
 <h2>Overview</h2>
@@ -67,4 +67,4 @@ Finally you can delve into the major components/languages of web development, na
 
 After gaining a basic understanding of the building blocks of web development, you can choose a frontend framework which will abstract the way applications are built with pure JavaScript.
 
-The diagram contains <a href="https://vuejs.org/" target="_blank">Vue.js</a> as a framework for frontend web applications, however one can use any available frameworks out there (<a href="https://angular.io/" target="_blank">Angular</a>, <a href="https://reactjs.org/" target="_blank">React.js</a>, etc...).
+The diagram contains <a href="https://vuejs.org/">Vue.js</a> as a framework for frontend web applications, however one can use any available frameworks out there (<a href="https://angular.io/">Angular</a>, <a href="https://reactjs.org/">React.js</a>, etc...).

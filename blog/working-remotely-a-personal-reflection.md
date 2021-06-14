@@ -42,7 +42,7 @@ Personally, I follow these guidelines when collaborating (it can be expanded to 
 
 <ul class="list-disc pl-8">
   <li>Have shorter collaboration sessions with a clear agenda.</li>
-  <li>Choose a collaboration tool that works efficiently for your team. I can recommend <a href="https://miro.com/" class="link" target="_blank">Miro</a> for planning activities.</li>
+  <li>Choose a collaboration tool that works efficiently for your team. I can recommend <a href="https://miro.com/" class="link">Miro</a> for planning activities.</li>
   <li>Set recurring reviews of objectives (if working in an Agile manner there are the usual ceremonies).</li>
   <li>Set recurring knowledge sharing sessions</li>
 </ul>
@@ -75,13 +75,13 @@ Moreover I try to have a walk at lunch time, this helps decluttering my mind and
 
 <ol class="list-decimal pl-8">
   <li>
-    <a class="link" href="https://www.bbc.com/worklife/article/20200421-why-zoom-video-chats-are-so-exhausting" target="_blank">
+    <a class="link" href="https://www.bbc.com/worklife/article/20200421-why-zoom-video-chats-are-so-exhausting">
       The reason Zoom calls drain your energy
     </a>
     (2020). BBC.
   </li>
   <li>
-    <a class="link" href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/07/08/future-work-good-challenging-unknown/" target="_blank">
+    <a class="link" href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/07/08/future-work-good-challenging-unknown/">
       The future of work - the good, the challenging & the unknown
     </a>
     (2020). Microsoft.

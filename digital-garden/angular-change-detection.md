@@ -30,7 +30,7 @@ The process in Angular, at a high level, works as follows:
 ## Overriding browser default mechanisms
 
 At startup time, Angular will patch several low-level browser APIs (e.g. `addEventListener`) using a
-library called <a class="link" href="https://github.com/angular/angular/tree/master/packages/zone.js" target="_blank">Zone.js</a>.
+library called <a class="link" href="https://github.com/angular/angular/tree/master/packages/zone.js">Zone.js</a>.
 A Zone is an execution context that persists across async tasks.
 
 ## How it works
@@ -99,7 +99,7 @@ TODO.
 
 <ol class="list-decimal pl-8">
   <li>
-    <a class="link" href="https://www.mokkapps.de/blog/the-last-guide-for-angular-change-detection-you-will-ever-need/" target="_blank">
+    <a class="link" href="https://www.mokkapps.de/blog/the-last-guide-for-angular-change-detection-you-will-ever-need/">
       The Last Guide For Angular Change Detection You'll Ever Need
     </a>
   </li>

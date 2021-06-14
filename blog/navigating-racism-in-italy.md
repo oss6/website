@@ -6,9 +6,9 @@ author: Ossama Edbali
 tags: post
 ---
 
-Following the <a href="https://anticapitalistresistance.org/why-did-seid-visin-take-his-own-life/" target="_blank" class="link">heartbreaking suicide of former A.C. Milan academy player Seid Visin</a>, I kept pondering over the black and immigrant experiences in Italy.
+Following the <a href="https://anticapitalistresistance.org/why-did-seid-visin-take-his-own-life/" class="link">heartbreaking suicide of former A.C. Milan academy player Seid Visin</a>, I kept pondering over the black and immigrant experiences in Italy.
 
-"Now, wherever I go, wherever I am, wherever I am I feel on my shoulders, like a boulder, the weight of people's skeptical, prejudiced, disgusted and frightened looks," he wrote in the harrowing <a href="https://anticapitalistresistance.org/why-did-seid-visin-take-his-own-life/" target="_blank" class="link">letter</a> dated 2019, shedding light on the nature of the black experience in Italy.
+"Now, wherever I go, wherever I am, wherever I am I feel on my shoulders, like a boulder, the weight of people's skeptical, prejudiced, disgusted and frightened looks," he wrote in the harrowing <a href="https://anticapitalistresistance.org/why-did-seid-visin-take-his-own-life/" class="link">letter</a> dated 2019, shedding light on the nature of the black experience in Italy.
 
 As a child of immigrant Moroccan parents, I related to the recounts of navigating racism in Italy and wanted to re-explore what I buried for a long time or never dealt with.
 
@@ -37,20 +37,20 @@ Seid Visin, rest in peace and power.
 
 <ol class="list-decimal pl-8">
   <li>
-    Istat, Ricostruzione della popolazione residente per età, sesso e cittadinanza nei comuni, <a href="https://www.istat.it/it/archivio/99464" target="_blank" class="link">https://www.istat.it/it/archivio/99464</a>
+    Istat, Ricostruzione della popolazione residente per età, sesso e cittadinanza nei comuni, <a href="https://www.istat.it/it/archivio/99464" class="link">https://www.istat.it/it/archivio/99464</a>
   </li>
   <li>
-    Fondazione ISMU, Dati sulle migrazioni, <a href="https://www.ismu.org/dati-sulle-migrazioni/" target="_blank" class="link">https://www.ismu.org/dati-sulle-migrazioni/</a>
+    Fondazione ISMU, Dati sulle migrazioni, <a href="https://www.ismu.org/dati-sulle-migrazioni/" class="link">https://www.ismu.org/dati-sulle-migrazioni/</a>
   </li>
   <li>
     Nadeesha Uyangoda (2020), Italy, it's time to confront your own rampant racism,
-    <a href="https://www.opendemocracy.net/en/5050/italy-its-time-to-confront-your-own-rampant-racism/" target="_blank" class="link">
+    <a href="https://www.opendemocracy.net/en/5050/italy-its-time-to-confront-your-own-rampant-racism/" class="link">
       https://www.opendemocracy.net/en/5050/italy-its-time-to-confront-your-own-rampant-racism/
     </a>
   </li>
   <li>
     La Stampa (2020), Experts and activists urge Italy to step up efforts to fight structural racism,
-    <a href="https://www.lastampa.it/esteri/la-stampa-in-english/2020/06/22/news/experts-and-activists-urge-italy-to-step-up-efforts-to-fight-structural-racism-1.38997131" target="_blank" class="link">
+    <a href="https://www.lastampa.it/esteri/la-stampa-in-english/2020/06/22/news/experts-and-activists-urge-italy-to-step-up-efforts-to-fight-structural-racism-1.38997131" class="link">
       https://www.lastampa.it/esteri/la-stampa-in-english/2020/06/22/news/experts-and-activists-urge-italy-to-step-up-efforts-to-fight-structural-racism-1.38997131
     </a>
   </li>

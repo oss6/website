@@ -8,18 +8,18 @@ tags: post
 
 <div class="bg-amber-100 shadow px-5 py-4 mb-4">
   <h3 class="text-2xl text-amber-800">The COVID-19 Data Portal publication</h3>
-  <p>The COVID-19 Data Portal is an <a href="https://twitter.com/hashtag/openaccess?src=hashtag_click" target="_blank" class="link">#openaccess</a>, <a href="https://twitter.com/hashtag/FAIR?src=hashtag_click" target="_blank" class="link">#FAIR</a> data resource that enables researchers to identify key <a href="https://twitter.com/hashtag/SARSCoV2?src=hashtag_click" target="_blank" class="link">#SARSCoV2</a> datasets vital for <a href="https://twitter.com/hashtag/COVID19?src=hashtag_click" target="_blank" class="link">#COVID19</a> research. Find out more in this new <a href="https://twitter.com/NAR_Open" target="_blank" class="link">@NAR_Open</a> publication: <a href="https://doi.org/10.1093/nar/gkab417" target="_blank" class="link">https://doi.org/10.1093/nar/gkab417</a>
+  <p>The COVID-19 Data Portal is an <a href="https://twitter.com/hashtag/openaccess?src=hashtag_click" class="link">#openaccess</a>, <a href="https://twitter.com/hashtag/FAIR?src=hashtag_click" class="link">#FAIR</a> data resource that enables researchers to identify key <a href="https://twitter.com/hashtag/SARSCoV2?src=hashtag_click" class="link">#SARSCoV2</a> datasets vital for <a href="https://twitter.com/hashtag/COVID19?src=hashtag_click" class="link">#COVID19</a> research. Find out more in this new <a href="https://twitter.com/NAR_Open" class="link">@NAR_Open</a> publication: <a href="https://doi.org/10.1093/nar/gkab417" class="link">https://doi.org/10.1093/nar/gkab417</a>
   </p>
 </div>
 
-<a href="https://www.covid19dataportal.org/" target="_blank" class="link">The COVID-19 Data Portal</a> is a project that was released as part of the European COVID-19 Data Platform to facilitate rapid and open data sharing and analysis, to accelerate global SARS-CoV-2 and COVID-19 research <a href="#references" class="link">(1)</a>.
+<a href="https://www.covid19dataportal.org/" class="link">The COVID-19 Data Portal</a> is a project that was released as part of the European COVID-19 Data Platform to facilitate rapid and open data sharing and analysis, to accelerate global SARS-CoV-2 and COVID-19 research <a href="#references" class="link">(1)</a>.
 
 Having worked as a web developer on the portal, I wanted to share the progress so far and what you can use the portal for.
 
 I joined the COVID-19 Data Portal Task Force (as part of the European Bioinformatics Institute) in October when it was somewhat mature.
 My main tasks are presenting new data types, maintaining existing ones, and implementing new features.
 
-For more information check out the <a href="https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab417/6287847" target="_blank" class="link">publication</a> on Oxford Nucleic Acids Research.
+For more information check out the <a href="https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab417/6287847" class="link">publication</a> on Oxford Nucleic Acids Research.
 
 <h2>Datasets</h2>
 
@@ -60,5 +60,5 @@ EBI Search includes a vast amount of data, however the portal uses subsets that 
 
 <ol class="list-decimal pl-8">
   <li>Madeira F., Park Y.M., Lee J., Buso N., Gur T., Madhusoodanan N., Basutkar P., Tivey A.R.N., Potter S.C., Finn R.D. et al. . The EMBL-EBI search and sequence analysis tools APIs in 2019. Nucleic Acids Res. 2019; 47:W636–W641.</li>
-  <li>Peter W Harrison, Rodrigo Lopez, Nadim Rahman, Stefan Gutnick Allen, Raheela Aslam, Nicola Buso, Carla Cummins, Yasmin Fathy, Eloy Felix, Mihai Glont, Suran Jayathilaka, Sandeep Kadam, Manish Kumar, Katharina B Lauer, Geetika Malhotra, Abayomi Mosaku, Ossama Edbali, Young Mi Park, Andrew Parton, Matt Pearce, Jose Francisco Estrada Pena, Joseph Rossetto, Craig Russell, Sandeep Selvakumar, Xènia Pérez Sitjà, Alexey Sokolov, Ross Thorne, Marianna Ventouratou, Peter Walter, Galabina Yordanova, Amonida Zadissa, Guy Cochrane, Niklas Blomberg, Rolf Apweiler, The COVID-19 Data Portal: accelerating SARS-CoV-2 and COVID-19 research through rapid open access data sharing, Nucleic Acids Research, 2021;, gkab417, <a href="https://doi.org/10.1093/nar/gkab417" target="_blank" class="link">https://doi.org/10.1093/nar/gkab417</a></li>
+  <li>Peter W Harrison, Rodrigo Lopez, Nadim Rahman, Stefan Gutnick Allen, Raheela Aslam, Nicola Buso, Carla Cummins, Yasmin Fathy, Eloy Felix, Mihai Glont, Suran Jayathilaka, Sandeep Kadam, Manish Kumar, Katharina B Lauer, Geetika Malhotra, Abayomi Mosaku, Ossama Edbali, Young Mi Park, Andrew Parton, Matt Pearce, Jose Francisco Estrada Pena, Joseph Rossetto, Craig Russell, Sandeep Selvakumar, Xènia Pérez Sitjà, Alexey Sokolov, Ross Thorne, Marianna Ventouratou, Peter Walter, Galabina Yordanova, Amonida Zadissa, Guy Cochrane, Niklas Blomberg, Rolf Apweiler, The COVID-19 Data Portal: accelerating SARS-CoV-2 and COVID-19 research through rapid open access data sharing, Nucleic Acids Research, 2021;, gkab417, <a href="https://doi.org/10.1093/nar/gkab417" class="link">https://doi.org/10.1093/nar/gkab417</a></li>
 </ol>
