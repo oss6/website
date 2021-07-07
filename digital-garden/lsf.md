@@ -5,6 +5,8 @@ tags: digital-garden
 note_type: seed
 categories:
 - Infrastructure
+references:
+- nfs
 ---
 
 LSF is a workload management platform, job scheduler, for distributed high performance computing (1).

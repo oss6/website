@@ -1,6 +1,12 @@
 ---
 layout: layouts/base.njk
 title: Digital garden
+scripts:
+  - "/js/sigma.min.js"
+  - "/js/sigma-plugins/sigma.plugins.animate.js"
+  - "/js/sigma-plugins/sigma.layout.noverlap.js"
+  - "/js/sigma-plugins/sigma.plugins.dragNodes.js"
+  - "/js/digital-garden.js"
 ---
 
 <main>
@@ -49,3 +55,12 @@ title: Digital garden
   {% endfor %}
   </div>
 </main>
+
+<div
+  id="digital-garden-graph"
+  style="
+  width: 800px;
+  height: 800px;
+  border: 1px dashed #444;
+  margin: 2rem auto"
+></div>

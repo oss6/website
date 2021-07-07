@@ -30,7 +30,16 @@
   {% include "../partials/footer.njk" %}
   {# </main> #}
 
-  <script src="/index.js"></script>
+  <script>
+    window.digitalGardenGraph = JSON.parse('{{ collections.digitalGardenGraph | dump | safe }}');
+  </script>
+
+  {% if scripts %}
+    {% for scriptUrl in scripts %}
+    <script src="{{ scriptUrl }}"></script>
+    {% endfor %}
+  {% endif %}
+  {# <script src="/index.js"></script> #}
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-54085200-2"></script>

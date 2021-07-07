@@ -8,6 +8,8 @@ categories:
 - Web Development
 todos:
 - Check internals
+references:
+- angular-change-detection
 ---
 
 In certain use cases, we may need to load component dynamically, for example to cater for unique needs in the same category.

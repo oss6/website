@@ -19,6 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./_tmp/styles.css");
 
   eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy({ "_tmp/styles.css": "styles.css" });
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("favicon-16x16.png");
@@ -53,6 +54,35 @@ module.exports = function (eleventyConfig) {
     }
 
     return Object.entries(digitalGardenMap);
+  });
+
+  eleventyConfig.addCollection("digitalGardenGraph", (collectionApi) => {
+    // const graph = {};
+
+    const notes = collectionApi.getFilteredByTag("digital-garden").map(note => ({
+      url: note.url,
+      fileSlug: note.fileSlug,
+      noteType: note.data.note_type,
+      title: note.data.title,
+      references: note.data.references
+    }));
+
+    const edges = [];
+
+    for (const note of notes) {
+      if (note.references && note.references.length > 0) {
+        for (const ref of note.references) {
+          edges.push({ from: note.fileSlug, to: ref });
+        }
+      }
+    }
+
+    // console.log(graph);
+
+    return {
+      nodes: notes,
+      edges
+    };
   });
 
   /* Markdown Overrides */
