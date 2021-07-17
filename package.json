@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf _site && rimraf _tmp",
     "build": "npm run clean && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss tailwind.build.css --o _site/styles.css && cleancss _site/styles.css -o _site/styles.css",
-    "start": "concurrently \"eleventy --serve\" \"postcss tailwind.build.css --o _tmp/styles.css --watch\""
+    "start": "concurrently \"ELEVENTY_PRODUCTION=false eleventy --serve\" \"postcss tailwind.build.css --o _tmp/styles.css --watch\""
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",

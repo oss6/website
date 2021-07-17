@@ -42,6 +42,7 @@
   {# <script src="/index.js"></script> #}
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
+  {% if website.environment === 'prod' %}
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-54085200-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -50,6 +51,7 @@
 
     gtag('config', 'UA-54085200-2');
   </script>
+  {% endif %}
 </body>
 
 </html>
